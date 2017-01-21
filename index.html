@@ -15,7 +15,7 @@
 </head>
 
 <style type="text/css">
-	
+
 	#header p{
 		padding: 0;
 		margin: 0;
@@ -140,8 +140,35 @@
 		font-weight: bold;
 		color: aliceblue;
 	}
+	.glyphicon-arrow-down {
+			float: right;
+			position: relative;
+			top: 3px;
+			left: -5px;
+			display: none;
+		}
+	@media only screen and (max-width: 480px) {
+		
+		.col-xs-2 {
+			display: block;
+			width: 100%;
+		}
+		.time {
+			display: none;
+		}
+		
+		.glyphicon-arrow-down {
+			float: right;
+			position: relative;
+			top: 3px;
+			left: -5px;
+			display: none;
+		}
 	
+	}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	
 <body>
 
 <div id="header">
@@ -152,7 +179,7 @@
 
 <div class="container-fluid">
 <div class="row">
-<div class="col-xs-2">
+<div class="time col-xs-2">
 	<div class="time">7:00am</div>
 	<div class="time">8:00am</div>
 	<div class="time">9:00am</div>
@@ -169,8 +196,10 @@
 	
 	  <div class="col-xs-2">
 	  <div class="box">
-	  	<p>Monday</p>
-	  	
+	  	<p>Monday
+	  	<span class="glyphicon glyphicon-arrow-down"></span>
+	  	</p>
+	  	<div class="day">
 	  		<a href="classes/L201 Spring 17 Timetable.pdf">
 	  			<div class="l201">
 	  			<h5>L201</h5>
@@ -204,13 +233,15 @@
 	  	<div class="line"></div>
 	  	<div class="line"></div>
 	  	<div class="line"></div>
+	  	</div>
 	  </div>
 	  	
 	  </div>
 	  <div class="col-xs-2">
 	  	<div class="box">
-	  	<p>Tuesday</p>
-	  	
+	  	<p>Tuesday
+	  	<span class="glyphicon glyphicon-arrow-down"></span></p>
+	  	<div class="day">
 	  		<a href="classes/A202 Class Schedule - Spr2017 (1).pdf">
 	  			<div class="a202">
 	  			<h5>A202</h5>
@@ -237,12 +268,14 @@
 	  	<div class="line"></div>
 	  	<div class="line"></div>
 	  	<div class="line"></div>
+	  	</div>
 	  </div>
 	  </div>
 	  <div class="col-xs-2">
 	  	<div class="box">
-	  	<p>Wednesday</p>
-	  	
+	  	<p>Wednesday
+	  	<span class="glyphicon glyphicon-arrow-down"></span></p>
+	  	<div class="day">
 	  		<a href="classes/L201 Spring 17 Timetable.pdf">
 	  			<div class="l201">
 	  			<h5>L201</h5>
@@ -263,6 +296,7 @@
 	  				Click here to view schedule
 	  			</div>
 	  		</a>
+	  		
 	  	<div class="line"></div>
 	  	<div class="line"></div>
 	  	<div class="line"></div>
@@ -275,12 +309,14 @@
 	  	<div class="line"></div>
 	  	<div class="line"></div>
 	  	<div class="line"></div>
+	  	</div>
 	  </div>
 	  </div>
 	  <div class="col-xs-2">
 	  	<div class="box">
-	  	<p>Thursday</p>
-	  	
+	  	<p>Thursday
+	  	<span class="glyphicon glyphicon-arrow-down"></span></p>
+	  	<div class="day">
 	  	<a href="classes/A202 Class Schedule - Spr2017 (1).pdf">
 	  			<div class="a202">
 	  			<h5>A202</h5>
@@ -306,12 +342,14 @@
 	  	<div class="line"></div>
 	  	<div class="line"></div>
 	  	<div class="line"></div>
+	  	</div>
 	  </div>
 	  </div>
 	  <div class="col-xs-2">
 	  	<div class="box">
-	  	<p>Friday</p>
-	  	
+	  	<p>Friday
+	  	<span class="glyphicon glyphicon-arrow-down"></span></p>
+	  	<div class="day">
 	  	<a href="classes/A202 Class Schedule - Spr2017 (1).pdf">
 	  			<div class="a202d">
 	  			<h5>A202 Disc.</h5>
@@ -330,6 +368,7 @@
 	  	<div class="line"></div>
 	  	<div class="line"></div>
 	  	<div class="line"></div>
+	  	</div>
 	  </div>
 	  </div>
   </div>
